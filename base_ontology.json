@@ -1,0 +1,248 @@
+﻿{
+    "classes": [
+        {
+            "id": 51,
+            "name": "Animals",
+            "color": "#7dfaf2",
+            "toolType": "CUBOID",
+            "toolTypeOptions": {
+                "width": [],
+                "height": [],
+                "length": [],
+                "isStandard": false,
+                "isConstraints": false
+            },
+            "attributes": [
+                {
+                    "name": "truncated",
+                    "type": "TEXT",
+                    "options": [],
+                    "required": false
+                },
+                {
+                    "name": "occluded",
+                    "type": "TEXT",
+                    "options": [],
+                    "required": false
+                }
+            ]
+        },
+        {
+            "id": 52,
+            "name": "Baby stroller",
+            "color": "#7ff0b3",
+            "toolType": "CUBOID",
+            "toolTypeOptions": {
+                "width": [],
+                "height": [],
+                "length": [],
+                "isStandard": false,
+                "isConstraints": false
+            },
+            "attributes": [
+                {
+                    "name": "truncated",
+                    "type": "TEXT",
+                    "options": [],
+                    "required": false
+                },
+                {
+                    "name": "occluded",
+                    "type": "TEXT",
+                    "options": [],
+                    "required": false
+                }
+            ]
+        },
+        {
+            "id": 53,
+            "name": "Bicycle",
+            "color": "#8177f5",
+            "toolType": "CUBOID",
+            "toolTypeOptions": {
+                "width": [],
+                "height": [],
+                "length": [],
+                "isStandard": false,
+                "isConstraints": false
+            },
+            "attributes": [
+                {
+                    "name": "truncated",
+                    "type": "TEXT",
+                    "options": [],
+                    "required": false
+                },
+                {
+                    "name": "occluded",
+                    "type": "TEXT",
+                    "options": [],
+                    "required": false
+                }
+            ]
+        },
+        {
+            "id": 54,
+            "name": "Bus",
+            "color": "#d3f868",
+            "toolType": "CUBOID",
+            "toolTypeOptions": {
+                "width": [],
+                "height": [],
+                "length": [],
+                "isStandard": false,
+                "isConstraints": false
+            },
+            "attributes": [
+                {
+                    "name": "truncated",
+                    "type": "TEXT",
+                    "options": [],
+                    "required": false
+                },
+                {
+                    "name": "occluded",
+                    "type": "TEXT",
+                    "options": [],
+                    "required": false
+                }
+            ]
+        },
+        {
+            "id": 55,
+            "name": "Car",
+            "color": "#faef2c",
+            "toolType": "CUBOID",
+            "toolTypeOptions": {
+                "width": [],
+                "height": [],
+                "length": [],
+                "isStandard": false,
+                "isConstraints": false
+            },
+            "attributes": [
+                {
+                    "name": "truncated",
+                    "type": "TEXT",
+                    "options": [],
+                    "required": false
+                },
+                {
+                    "name": "occluded",
+                    "type": "TEXT",
+                    "options": [],
+                    "required": false
+                }
+            ]
+        },
+        {
+            "id": 56,
+            "name": "Motorcycle",
+            "color": "#fcb17a",
+            "toolType": "CUBOID",
+            "toolTypeOptions": {
+                "width": [],
+                "height": [],
+                "length": [],
+                "isStandard": false,
+                "isConstraints": false
+            },
+            "attributes": [
+                {
+                    "name": "truncated",
+                    "type": "TEXT",
+                    "options": [],
+                    "required": false
+                },
+                {
+                    "name": "occluded",
+                    "type": "TEXT",
+                    "options": [],
+                    "required": false
+                }
+            ]
+        },
+        {
+            "id": 57,
+            "name": "Pedestrian",
+            "color": "#f87d7d",
+            "toolType": "CUBOID",
+            "toolTypeOptions": {
+                "width": [],
+                "height": [],
+                "length": [],
+                "isStandard": false,
+                "isConstraints": false
+            },
+            "attributes": [
+                {
+                    "name": "truncated",
+                    "type": "TEXT",
+                    "options": [],
+                    "required": false
+                },
+                {
+                    "name": "occluded",
+                    "type": "TEXT",
+                    "options": [],
+                    "required": false
+                }
+            ]
+        },
+        {
+            "id": 58,
+            "name": "Truck",
+            "color": "#c18af7",
+            "toolType": "CUBOID",
+            "toolTypeOptions": {
+                "width": [],
+                "height": [],
+                "length": [],
+                "isStandard": false,
+                "isConstraints": false
+            },
+            "attributes": [
+                {
+                    "name": "truncated",
+                    "type": "TEXT",
+                    "options": [],
+                    "required": false
+                },
+                {
+                    "name": "occluded",
+                    "type": "TEXT",
+                    "options": [],
+                    "required": false
+                }
+            ]
+        },
+        {
+            "id": 59,
+            "name": "Van",
+            "color": "#de7ef6",
+            "toolType": "CUBOID",
+            "toolTypeOptions": {
+                "width": [],
+                "height": [],
+                "length": [],
+                "isStandard": false,
+                "isConstraints": false
+            },
+            "attributes": [
+                {
+                    "name": "truncated",
+                    "type": "TEXT",
+                    "options": [],
+                    "required": false
+                },
+                {
+                    "name": "occluded",
+                    "type": "TEXT",
+                    "options": [],
+                    "required": false
+                }
+            ]
+        }
+    ],
+    "classifications": []
+}
