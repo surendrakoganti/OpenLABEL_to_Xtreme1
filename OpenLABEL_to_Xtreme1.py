@@ -5,10 +5,10 @@ import os
 def bbox_to_contour(val):
     cx, cy, w, h = val
     return [
-        {"x": cx, "y": cy},
-        {"x": cx, "y": cy + h},
-        {"x": cx + w, "y": cy + h},
-        {"x": cx + w, "y": cy},
+        {"x": cx - w/2, "y": cy - h/2},
+        {"x": cx - w/2, "y": cy + h/2},
+        {"x": cx + w/2, "y": cy + h/2},
+        {"x": cx + w/2, "y": cy - h/2},
     ]
 
 def cuboid_to_contour(val):
