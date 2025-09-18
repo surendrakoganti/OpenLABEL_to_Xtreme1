@@ -18,13 +18,7 @@ def cuboid_to_contour(val):
         "rotation3D": {"x": val[3], "y": val[4], "z": val[5]},
     }
 
-def check_consistency(file_name, obj_id, object_data, errors):
-    has_bbox = "bbox" in object_data and len(object_data["bbox"]) > 0
-    has_cuboid = "cuboid" in object_data and len(object_data["cuboid"]) > 0
-    if has_bbox and not has_cuboid:
-        errors.append(f"[{file_name}] Error: Object ID {obj_id} has bbox but no cuboid.")
-
-def convert_file(input_path, output_path, ref_objects, errors):
+def convert_file(input_path, output_path, ref_objects):
     with open(input_path, "r") as f:
         data = json.load(f)
 
@@ -37,7 +31,7 @@ def convert_file(input_path, output_path, ref_objects, errors):
         track_name = str(obj_id)
         object_data = obj.get("object_data", {})
 
-        check_consistency(file_name, obj_id, object_data, errors)
+        check_consistency(file_name, obj_id, object_data)
 
         # Reference object for IDs
         ref_obj = ref_objects.get(obj_type)
@@ -112,24 +106,16 @@ def convert_folder(input_folder, output_folder, reference_file):
     ref_objects = {obj["className"]: obj for obj in reference_data[0]["objects"]}
 
     os.makedirs(output_folder, exist_ok=True)
-    errors = []
     for file in os.listdir(input_folder):
         if file.endswith(".json"):
             convert_file(os.path.join(input_folder, file),
                          os.path.join(output_folder, file),
-                         ref_objects,
-                         errors)
+                         ref_objects)
     print("Conversion completed.")
-    if errors:
-        print("\nConsistency check errors:")
-        for e in errors:
-            print(e)
-    else:
-        print("\nAll files passed consistency checks.")
 
 # === Specify paths here ===
-openlabel_folder = "/tmp/20250905_3d&2d/Heavy_rain/Sequence_0/camera_image_3/openlabel"
-output_folder = "/home/hs-coburg.de/sur7933s/Documents/scenes/scene_3"
-ref_ontology_classes_file = "/home/hs-coburg.de/sur7933s/Documents/openLabel_to_xtreme1/reference_ontology_wrt_objects.json"
+openlabel_folder = ""
+output_folder = ""
+ref_ontology_classes_file = ""
 
 convert_folder(openlabel_folder, output_folder + "/result", ref_ontology_classes_file)
