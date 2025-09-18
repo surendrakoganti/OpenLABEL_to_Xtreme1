@@ -31,8 +31,6 @@ def convert_file(input_path, output_path, ref_objects):
         track_name = str(obj_id)
         object_data = obj.get("object_data", {})
 
-        check_consistency(file_name, obj_id, object_data)
-
         # Reference object for IDs
         ref_obj = ref_objects.get(obj_type)
         if not ref_obj:
